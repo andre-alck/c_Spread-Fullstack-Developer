@@ -1,0 +1,29 @@
+body {
+    background: #e8c07d;
+}
+
+#title,
+.subtitle,
+.post_title {
+    color: #614124;
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.post {
+    background: #9fc088;
+    padding: 15px;
+    border: 3px solid #cc704b;
+    border-radius: 15px;
+
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.photo {
+    border: 3px solid #cc704b;
+    border-radius: 50%;
+}
