@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos - align content</title>
+        <style>
+            .container-row {
+                border: 5px solid yellow;
+            }
+
+            .container-column {
+                border: 5px solid blue;
+            }
+
+            .container {
+                display: flex;
+                height: 400px;
+                max-width: 300px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                border: 5px solid orangered;
+            }
+
+            .center {
+                align-content: center;
+            }
+            .stretch {
+                align-content: stretch;
+            }
+            .flex-start {
+                align-content: flex-start;
+            }
+            .flex-end {
+                align-content: flex-end;
+            }
+            .space-between {
+                align-content: space-between;
+            }
+            .space-around {
+                align-content: space-around;
+            }
+
+            .item {
+                background-color: blueviolet;
+                padding: 0 5px;
+                margin: 5px;
+                flex: 1;
+                text-align: center;
+                color: white;
+                border: 1px solid black;
+            }
+
+            .row {
+                flex-direction: row;
+            }
+
+            .column {
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>row</h1>
+        <section class="container-row">
+            <p>center:</p>
+            <div class="container center row">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>stretch:</p>
+            <div class="container stretch row">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>flex-start:</p>
+            <div class="container flex-start row">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>flex-end:</p>
+            <div class="container flex-end row">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>space-between:</p>
+            <div class="container space-between row">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>space-around:</p>
+            <div class="container space-around row">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </section>
+        <h1>column</h1>
+        <section class="container-column">
+            <p>center:</p>
+            <div class="container center column">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>stretch:</p>
+            <div class="container stretch column">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>flex-start:</p>
+            <div class="container flex-start column">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>flex-end:</p>
+            <div class="container flex-end column">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>space-between :</p>
+            <div class="container space-between column">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <p>space-around:</p>
+            <div class="container space-around column">
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                </div>
+                <div class="item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
