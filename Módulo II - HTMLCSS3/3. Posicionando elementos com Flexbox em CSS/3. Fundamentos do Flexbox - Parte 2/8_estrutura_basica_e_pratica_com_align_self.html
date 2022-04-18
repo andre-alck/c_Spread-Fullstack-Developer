@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fundamentos - align self</title>
+        <style>
+            .flex-container {
+                max-width: 350px;
+                border: 1px solid;
+                display: flex;
+            }
+
+            .align-container {
+                align-items: center;
+            }
+
+            .item {
+                background-color: brown;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .center {
+                align-self: center;
+            }
+
+            .start {
+                align-self: flex-start;
+            }
+
+            .end {
+                align-self: flex-end;
+            }
+
+            .baseline {
+                align-self: baseline;
+            }
+
+            .stretch {
+                align-self: stretch;
+            }
+
+            .auto {
+                align-self: auto;
+            }
+
+            .direction {
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>row</h1>
+        <div class="flex-container align-container">
+            <div class="item auto">1</div>
+            <div class="item auto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora, dolore beatae eum distinctio optio facilis omnis
+                voluptate perspiciatis, neque minima dolorem eos voluptates
+                modi. Sapiente officia itaque consequuntur commodi nesciunt!
+            </div>
+            <div class="item auto">3</div>
+            <div class="item auto">4</div>
+        </div>
+
+        <div class="flex-container">
+            <div class="item center">1</div>
+            <div class="item stretch">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                qui voluptate sapiente id tempora rerum, ea sunt dolorum, natus
+                quidem non maiores? Quam, id aperiam facere asperiores aliquam
+                tempora mollitia.
+            </div>
+            <div class="item start">3</div>
+            <div class="item end">4</div>
+        </div>
+
+        <h1>column</h1>
+        <div class="flex-container align-container direction">
+            <div class="item auto">1</div>
+            <div class="item auto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora, dolore beatae eum distinctio optio facilis omnis
+                voluptate perspiciatis, neque minima dolorem eos voluptates
+                modi. Sapiente officia itaque consequuntur commodi nesciunt!
+            </div>
+            <div class="item auto">3</div>
+            <div class="item auto">4</div>
+        </div>
+
+        <div class="flex-container direction">
+            <div class="item center">1</div>
+            <div class="item stretch">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                qui voluptate sapiente id tempora rerum, ea sunt dolorum, natus
+                quidem non maiores? Quam, id aperiam facere asperiores aliquam
+                tempora mollitia.
+            </div>
+            <div class="item start">3</div>
+            <div class="item end">4</div>
+        </div>
+    </body>
+</html>
