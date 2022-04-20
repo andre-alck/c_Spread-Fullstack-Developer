@@ -1,0 +1,35 @@
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.flex-container {
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+#task-input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(0, 174, 255);
+    background-color: rgba(127, 255, 249, 0.651);
+    border-color: rgb(0, 174, 255);
+}
